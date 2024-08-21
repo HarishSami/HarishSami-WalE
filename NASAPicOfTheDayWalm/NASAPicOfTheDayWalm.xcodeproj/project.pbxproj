@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1517B582C7648F800C94B00 /* ApodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1517B572C7648F800C94B00 /* ApodModel.swift */; };
 		E1B9EF402C7619AF00122810 /* NASAPicOfTheDayWalmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B9EF3F2C7619AF00122810 /* NASAPicOfTheDayWalmApp.swift */; };
 		E1B9EF422C7619AF00122810 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B9EF412C7619AF00122810 /* ContentView.swift */; };
 		E1B9EF442C7619B000122810 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B9EF432C7619B000122810 /* Assets.xcassets */; };
@@ -16,6 +17,10 @@
 		E1B9EF562C7619B100122810 /* NASAPicOfTheDayWalmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B9EF552C7619B100122810 /* NASAPicOfTheDayWalmTests.swift */; };
 		E1B9EF602C7619B100122810 /* NASAPicOfTheDayWalmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B9EF5F2C7619B100122810 /* NASAPicOfTheDayWalmUITests.swift */; };
 		E1B9EF622C7619B100122810 /* NASAPicOfTheDayWalmUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B9EF612C7619B100122810 /* NASAPicOfTheDayWalmUITestsLaunchTests.swift */; };
+		E1B9EF752C76301A00122810 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B9EF742C76301A00122810 /* NetworkManager.swift */; };
+		E1B9EF772C76309900122810 /* ApodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B9EF762C76309900122810 /* ApodViewModel.swift */; };
+		E1B9EF792C76311700122810 /* ApodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B9EF782C76311700122810 /* ApodView.swift */; };
+		E1B9EF7C2C7631F000122810 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B9EF7B2C7631F000122810 /* RemoteImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E1517B572C7648F800C94B00 /* ApodModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApodModel.swift; sourceTree = "<group>"; };
 		E1B9EF3C2C7619AF00122810 /* NASAPicOfTheDayWalm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NASAPicOfTheDayWalm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B9EF3F2C7619AF00122810 /* NASAPicOfTheDayWalmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAPicOfTheDayWalmApp.swift; sourceTree = "<group>"; };
 		E1B9EF412C7619AF00122810 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +54,10 @@
 		E1B9EF5B2C7619B100122810 /* NASAPicOfTheDayWalmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NASAPicOfTheDayWalmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B9EF5F2C7619B100122810 /* NASAPicOfTheDayWalmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAPicOfTheDayWalmUITests.swift; sourceTree = "<group>"; };
 		E1B9EF612C7619B100122810 /* NASAPicOfTheDayWalmUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAPicOfTheDayWalmUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E1B9EF742C76301A00122810 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E1B9EF762C76309900122810 /* ApodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodViewModel.swift; sourceTree = "<group>"; };
+		E1B9EF782C76311700122810 /* ApodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodView.swift; sourceTree = "<group>"; };
+		E1B9EF7B2C7631F000122810 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +108,11 @@
 		E1B9EF3E2C7619AF00122810 /* NASAPicOfTheDayWalm */ = {
 			isa = PBXGroup;
 			children = (
-				E1B9EF3F2C7619AF00122810 /* NASAPicOfTheDayWalmApp.swift */,
+				E1B9EF7D2C7645F500122810 /* Window */,
+				E1B9EF732C762FE900122810 /* Networking */,
+				E1B9EF702C762F7900122810 /* Views */,
+				E1B9EF6F2C762F6E00122810 /* ViewModel */,
+				E1B9EF6E2C762F5500122810 /* Model */,
 				E1B9EF412C7619AF00122810 /* ContentView.swift */,
 				E1B9EF432C7619B000122810 /* Assets.xcassets */,
 				E1B9EF482C7619B000122810 /* Persistence.swift */,
@@ -131,6 +145,55 @@
 				E1B9EF612C7619B100122810 /* NASAPicOfTheDayWalmUITestsLaunchTests.swift */,
 			);
 			path = NASAPicOfTheDayWalmUITests;
+			sourceTree = "<group>";
+		};
+		E1B9EF6E2C762F5500122810 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1517B572C7648F800C94B00 /* ApodModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1B9EF6F2C762F6E00122810 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E1B9EF762C76309900122810 /* ApodViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E1B9EF702C762F7900122810 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E1B9EF7A2C7631D600122810 /* CustomViews */,
+				E1B9EF782C76311700122810 /* ApodView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E1B9EF732C762FE900122810 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E1B9EF742C76301A00122810 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E1B9EF7A2C7631D600122810 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				E1B9EF7B2C7631F000122810 /* RemoteImageView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		E1B9EF7D2C7645F500122810 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				E1B9EF3F2C7619AF00122810 /* NASAPicOfTheDayWalmApp.swift */,
+			);
+			path = Window;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +326,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1B9EF792C76311700122810 /* ApodView.swift in Sources */,
+				E1B9EF7C2C7631F000122810 /* RemoteImageView.swift in Sources */,
+				E1B9EF752C76301A00122810 /* NetworkManager.swift in Sources */,
+				E1517B582C7648F800C94B00 /* ApodModel.swift in Sources */,
+				E1B9EF772C76309900122810 /* ApodViewModel.swift in Sources */,
 				E1B9EF4C2C7619B000122810 /* NASAPicOfTheDayWalm.xcdatamodeld in Sources */,
 				E1B9EF492C7619B000122810 /* Persistence.swift in Sources */,
 				E1B9EF422C7619AF00122810 /* ContentView.swift in Sources */,
@@ -437,6 +505,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,6 +534,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
