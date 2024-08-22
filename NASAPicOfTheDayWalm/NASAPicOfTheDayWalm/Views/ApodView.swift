@@ -86,11 +86,11 @@ struct ApodView: View {
                 
                     Text(cachedAPOD.explanation)
                         .font(.body)
-                        .foregroundColor(Color.white)
+                        .foregroundColor(Color.black)
                         .padding(.horizontal)
                         .multilineTextAlignment(.leading)
                 }
-                .background(Color.black)
+                .background(Color.white)
                 .cornerRadius(10)
                 .padding(.horizontal)
             } else {
