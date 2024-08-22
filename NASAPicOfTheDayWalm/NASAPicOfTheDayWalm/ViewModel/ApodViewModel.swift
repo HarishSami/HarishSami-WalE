@@ -17,6 +17,13 @@ class ApodViewModel: ObservableObject {
     private let userDefaults = UserDefaults.standard
     private let apiKey = "ySHXyaj01mT7EOyBIIl0waOaLt8ZVFZPqFR3vpoi"
     private let baseURL = "https://api.nasa.gov/planetary/apod"
+    
+    var hasSeenAPODToday: Bool {
+        if let lastFetchDate = userDefaults.object(forKey: "lastFetchDate") as? Date {
+            return Calendar.current.isDateInToday(lastFetchDate)
+        }
+        return false
+    }
 
     func fetchAPOD() {
         guard let url = URL(string: "\(baseURL)?api_key=\(apiKey)") else {

@@ -15,10 +15,14 @@ struct ApodView: View {
         NavigationView {
             VStack {
                 if !networkMonitor.isConnected {
-                    Text("We are not connected to the internet, showing you the last image we have.")
-                        .foregroundColor(.red)
-                        .padding()
-                    loadCachedAPOD()
+                    if viewModel.hasSeenAPODToday {
+                        loadCachedAPOD()
+                    } else {
+                        Text("We are not connected to the internet, showing you the last image we have.")
+                            .foregroundColor(.red)
+                            .padding()
+                        loadCachedAPOD()
+                    }
                 } else if let apod = viewModel.apod {
                     ScrollView {
                         VStack(spacing: 16) {
@@ -58,6 +62,8 @@ struct ApodView: View {
             .onAppear {
                 if networkMonitor.isConnected {
                     viewModel.fetchAPOD()
+                } else {
+                    viewModel.loadCachedAPOD()
                 }
             }
         }
