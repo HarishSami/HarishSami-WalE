@@ -72,6 +72,7 @@ struct ApodView: View {
     private func loadCachedAPOD() -> some View {
         VStack(spacing: 16) {
             if let cachedAPOD = viewModel.cachedAPOD {
+                ScrollView {
                 Text(cachedAPOD.title)
                     .font(.title)
                     .foregroundColor(Color.purple)
@@ -83,7 +84,6 @@ struct ApodView: View {
                     .cornerRadius(10)
                     .padding(.horizontal)
                 
-                ScrollView {
                     Text(cachedAPOD.explanation)
                         .font(.body)
                         .foregroundColor(Color.white)
